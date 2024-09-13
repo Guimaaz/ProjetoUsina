@@ -32,20 +32,9 @@ body {
 }
 
 
-
-.menu {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 20px; 
-    margin-top: 20px; 
-    position:relative;
-    z-index: 2;
-}
-
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: hsl(32, 80%, 34%); 
+    color: hsl(0, 0%, 100%); 
     margin-right: 30px; 
     padding: 3px; 
     text-decoration: none;
