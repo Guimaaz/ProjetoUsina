@@ -31,6 +31,8 @@ body {
     pointer-events: none;
 }
 
+
+
 .menu {
     background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px; 
@@ -80,4 +82,10 @@ p {
     position: relative;
     z-index: 1;
     right : 30px
+}
+
+p{
+    color: white;
+    z-index: 1;
+    position: relative;
 }
