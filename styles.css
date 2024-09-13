@@ -31,8 +31,8 @@ body {
 }
 
 .background {
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow: auto;
     background-image: url('imagens/UsinaImagem.jpg');
     background-size: cover;
     background-position: center;
