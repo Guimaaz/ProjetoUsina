@@ -31,21 +31,16 @@ body {
     pointer-events: none;
 }
 
-.menu-container {
+.menu {
     background-color: rgba(0, 0, 0, 0.7); 
-    
     padding: 20px; 
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin: 20px; 
+    margin: 20px;
     z-index: 2;
     position: relative;
     max-width: 1200px;
-     
-}
-
-.menu {
     display: flex;
     flex-wrap: wrap;
     gap: 42px;
