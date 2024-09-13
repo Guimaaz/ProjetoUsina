@@ -8,6 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .Logo {
@@ -23,16 +24,17 @@ body {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin: 20px auto; /* Ajuste a margem para centralizar e evitar rolagem */
+    margin: 20px auto; 
     max-width: 1200px;
     flex-wrap: wrap;
     gap: 42px;
     z-index: 2;
+    
 }
 
 
 .background {
-    min-height: 100vh; /* Ajusta a altura mínima */
+    min-height: 100vh;
     width: 100%;
     overflow: hidden; /* Evita rolagem extra */
     background-image: url('imagens/UsinaImagem.jpg');
@@ -41,6 +43,8 @@ body {
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
+    
+    
 }
 
 .background::before {
@@ -69,7 +73,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    font-size: 3rem; /* Ajuste conforme necessário */
+    font-size: 100px; 
     text-align: center;
     margin-top: 20px;
     z-index: 1;
