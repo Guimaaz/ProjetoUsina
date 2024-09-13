@@ -1,0 +1,38 @@
+h1 {
+           
+    font-family: 'Montserrat', sans-serif;
+   
+    font-weight: 700;
+   
+    font-size: 2.5em;
+   
+    color: #0c500c;
+   
+    margin-bottom: 20px;
+   
+}
+
+
+
+
+
+a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+    margin-right: 30px;
+   
+    text-decoration: none;
+   
+    padding: 3px;
+   
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+   
+    gap: 20px;
+
+}
