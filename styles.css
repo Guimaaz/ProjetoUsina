@@ -52,10 +52,21 @@ body {
     pointer-events: none;
 }
 
-.cabeçalho {
-    text-align: center; /* Alinha o conteúdo do cabeçalho ao centro */
-    margin: 20px auto; 
-    max-width: 1200px; 
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    z-index: 2;
+    position: relative;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
     position: relative;
     z-index: 2; /* Garante que o conteúdo esteja acima do background e antes do logo */
 }
@@ -86,6 +97,11 @@ p {
     color: hsl(0, 0%, 100%); 
     position: relative;
     z-index: 1;
-    text-align: center;
-    margin-top: 20px; 
+    right : 30px
+}
+
+p{
+    color: white;
+    z-index: 1;
+    position: relative;
 }
