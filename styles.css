@@ -68,7 +68,7 @@ body {
     flex-wrap: wrap;
     gap: 42px;
     position: relative;
-    z-index: 2; /* Garante que o conteúdo esteja acima do background e antes do logo */
+    z-index: 2; /
 }
 
 a {
@@ -104,4 +104,5 @@ p{
     color: white;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
