@@ -36,7 +36,7 @@ body {
 .backgroundEventos{
     min-height: 100vh;
     width: 100%;
-    overflow: hidden; /* Evita rolagem extra */
+    overflow: hidden; 
     background-image: url('imagens/EventosUsina.jpg');
     background-size:100%;
     background-position:auto;
@@ -49,7 +49,7 @@ body {
 .backgroundIndex {
     min-height: 100vh;
     width: 100%;
-    overflow: hidden; /* Evita rolagem extra */
+    overflow: hidden;
     background-image: url('imagens/UsinaImagem.jpg');
     background-size:100%;
     background-position:auto;
@@ -61,9 +61,9 @@ body {
 }
 
 .backgroundBiografia {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
-    overflow: hidden; /* Evita rolagem extra */
+    overflow: hidden; 
     background-image: url('imagens/SobreNosUsina.jpeg');
     background-size:100%;
     background-position:auto;
