@@ -25,9 +25,9 @@ body {
     display: flex;
     justify-content: center;
     margin: 20px auto; 
-    max-width: 1200px;
+    max-width: 800px;
     flex-wrap: wrap;
-    gap: 42px;
+    gap: 30px;
     z-index: 2;
     
 }
