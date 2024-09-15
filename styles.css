@@ -1,7 +1,6 @@
 html {
     margin: 0;
-    padding: 0;
-    height: 100%;
+    padding: 0; 
     overflow-x: hidden;
 }
 
@@ -10,6 +9,8 @@ body {
     padding: 0;
     
 }
+
+
 
 .Logo {
     position: relative;
@@ -22,12 +23,12 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     padding-left: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
     margin: 20px auto;
-    max-width: 1000px;
+    max-width: 900px;
     gap: 40px;
     z-index: 2;
    
@@ -43,6 +44,7 @@ body {
     display: inline-block;
     z-index: 2;
     position: relative;
+    
    
 }
 
@@ -50,6 +52,7 @@ body {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    
     
    
    
@@ -60,13 +63,15 @@ body {
 .menu button img {
     width: 70px; 
     height: 50px;
-
+    
 }
 
+
+
 .backgroundEventos{
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden; 
+    height: auto;
+    width: auto;
+    overflow: hidden;
     background-image: url('imagens/EventosUsina.jpg');
     background-size:100%;
     background-position:auto;
@@ -77,8 +82,8 @@ body {
 }
 
 .backgroundIndex {
-    min-height: 100vh;
-    width: 100%;
+    height: auto;
+    width: auto;
     overflow: hidden;
     background-image: url('imagens/UsinaImagem.jpg');
     background-size:100%;
@@ -91,8 +96,8 @@ body {
 }
 
 .backgroundBiografia {
-    min-height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     overflow: hidden; 
     background-image: url('imagens/SobreNosUsina.jpeg');
     background-size:100%;
@@ -110,7 +115,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 255, 0, 0.7));
     z-index: 0;
@@ -121,7 +126,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(148, 26, 185, 0.7));
     z-index: 0;
@@ -133,7 +138,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(212, 124, 23, 0.7));
     z-index: 0;
