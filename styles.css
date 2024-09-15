@@ -17,27 +17,36 @@ body {
     z-index: 1; 
     margin-top: 20px;
     text-align: center; 
+    size : contain;
 }
 
+
+
+
+
+
+
+
 .menu  {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgb(56, 53, 53);
     padding: 10px;
     padding-left: 30px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
     margin: 20px auto;
     max-width: 900px;
     gap: 40px;
     z-index: 2;
    
+   
     
 }
 
 .menu a {
     font-family: 'Quicksand', sans-serif;
-    color: hsl(0, 0%, 100%);
+    color: white;
     text-decoration: none;
     font-weight: 600;
     text-align: center; 
@@ -66,14 +75,34 @@ body {
     
 }
 
+@media only screen and (max-width: 768px) {
+    .backgroundIndex, .backgroundBiografia, .backgroundEventos{
+        height: 70vh;
+    }
 
+    .backgroundIndex::before, .backgroundBiografia::before, .backgroundEventos::before {
+        height: 100%; 
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    .backgroundIndex,.backgroundBiografia,.backgroundEventos{
+        height: 50vh; 
+    }
+
+   
+    
+}
 
 .backgroundEventos{
     height: auto;
     width: auto;
     overflow: hidden;
     background-image: url('imagens/EventosUsina.jpg');
-    background-size:100%;
+    background-size:contain;
     background-position:auto;
     background-repeat: no-repeat;
     position: relative;
@@ -82,11 +111,11 @@ body {
 }
 
 .backgroundIndex {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     background-image: url('imagens/UsinaImagem.jpg');
-    background-size:100%;
+    background-size:contain;
     background-position:auto;
     background-repeat: no-repeat;
     position: relative;
@@ -96,11 +125,11 @@ body {
 }
 
 .backgroundBiografia {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     overflow: hidden; 
     background-image: url('imagens/SobreNosUsina.jpeg');
-    background-size:100%;
+    background-size:cover;
     background-position:auto;
     background-repeat: no-repeat;
     position: relative;
@@ -108,6 +137,8 @@ body {
     
     
 }
+
+
 
 
 .backgroundIndex::before {
@@ -118,8 +149,10 @@ body {
     width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 255, 0, 0.7));
-    z-index: 0;
+    z-index: 1;
 }
+
+
 
 .backgroundEventos::before {
     content: '';
@@ -129,7 +162,7 @@ body {
     width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(148, 26, 185, 0.7));
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -141,18 +174,30 @@ body {
     width:100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(212, 124, 23, 0.7));
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
 }
 .cabecalhoTextos {
     padding-top: 750px
 }
 
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 10vw; 
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 12vw; 
+    }
+}
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    font-size: 100px; 
+    font-size: 8vw; 
     text-align: center;
     margin-top: 20px;
     z-index: 1;
