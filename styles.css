@@ -1,23 +1,23 @@
 html {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     overflow-x: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
-    
+
 }
 
 
-
+/* css do logo na index */
 .Logo {
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     margin-top: 20px;
-    text-align: center; 
-    size : contain;
+    text-align: center;
+    size: contain;
 }
 
 
@@ -25,23 +25,23 @@ body {
 
 
 
+/* css do menu */
 
-
-.menu  {
+.menu {
     background-color: rgb(56, 53, 53);
     padding: 10px;
     padding-left: 30px;
     border-radius: 20px;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin: 20px auto;
     max-width: 900px;
     gap: 40px;
     z-index: 2;
-   
-   
-    
+
+
+
 }
 
 .menu a {
@@ -49,65 +49,77 @@ body {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    text-align: center; 
+    text-align: center;
     display: inline-block;
     z-index: 2;
     position: relative;
-    
-   
+
+
 }
 
 .menu button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    
-    
-   
-   
-    
-    
+
+
+
+
+
+
 }
 
 .menu button img {
-    width: 70px; 
+    width: 70px;
     height: 50px;
-    
+
 }
 
+/* responsividade das paginas */
+
 @media only screen and (max-width: 768px) {
-    .backgroundIndex, .backgroundBiografia, .backgroundEventos{
+
+    .backgroundIndex,
+    .backgroundBiografia,
+    .backgroundEventos {
         height: 70vh;
     }
 
-    .backgroundIndex::before, .backgroundBiografia::before, .backgroundEventos::before {
-        height: 100%; 
+    .backgroundIndex::before,
+    .backgroundBiografia::before,
+    .backgroundEventos::before {
+        height: 100%;
     }
 
-    
+
 }
 
 
 @media only screen and (max-width: 480px) {
-    .backgroundIndex,.backgroundBiografia,.backgroundEventos{
-        height: 50vh; 
+
+    .backgroundIndex,
+    .backgroundBiografia,
+    .backgroundEventos {
+        height: 50vh;
     }
 
-   
-    
+
+
 }
 
-.backgroundEventos{
+
+/* css background das paginas */
+.backgroundEventos {
     height: auto;
     width: auto;
     overflow: hidden;
     background-image: url('imagens/EventosUsina.jpg');
-    background-size:contain;
-    background-position:auto;
+    background-size: contain;
+    background-position: auto;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    
+
 }
 
 .backgroundIndex {
@@ -115,38 +127,38 @@ body {
     width: 100%;
     overflow: hidden;
     background-image: url('imagens/UsinaImagem.jpg');
-    background-size:contain;
-    background-position:auto;
+    background-size: contain;
+    background-position: auto;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    
-    
+
+
 }
 
 .backgroundBiografia {
     height: 100%;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
     background-image: url('imagens/SobreNosUsina.jpeg');
-    background-size:cover;
-    background-position:auto;
+    background-size: cover;
+    background-position: auto;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
-    
-    
+
+
 }
 
 
 
-
+/* css do efeito fade */
 .backgroundIndex::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 255, 0, 0.7));
     z-index: 1;
@@ -159,7 +171,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(148, 26, 185, 0.7));
     z-index: 1;
@@ -171,33 +183,38 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(212, 124, 23, 0.7));
     z-index: 1;
     pointer-events: none;
 }
+
+/* css de textos */
 .cabecalhoTextos {
     padding-top: 750px
 }
 
+/* responsividade das letras */
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 10vw; 
+        font-size: 10vw;
     }
 }
 
 
 @media only screen and (max-width: 480px) {
     h1 {
-        font-size: 12vw; 
+        font-size: 12vw;
     }
 }
+
+/* css das letras */
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: hsl(0, 0%, 100%);
     font-weight: 700;
-    font-size: 8vw; 
+    font-size: 8vw;
     text-align: center;
     margin-top: 20px;
     z-index: 1;
@@ -208,10 +225,10 @@ p {
     font-family: 'Karla', sans-serif;
     color: hsl(0, 0%, 100%);
     text-align: center;
-    margin: 0px 20px; 
+    margin: 0px 20px;
     z-index: 1;
     position: relative;
-    
-    
-    
+
+
+
 }
