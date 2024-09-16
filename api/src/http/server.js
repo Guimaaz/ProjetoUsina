@@ -1,9 +1,14 @@
-const fastify = require('fastify')({ logger: true })
+const fastify = require('fastify')
+const cors = require('@fastify/cors')
 
-import { signUp } from './routes/sign-up'
-import { login } from './routes/login'
+const signUp = require('./routes/sign-up')
+const login = require('./routes/login')
 
 const app = fastify()
+
+app.register(cors, {
+  origin: '*'
+})
 
 app.register(signUp)
 app.register(login)
