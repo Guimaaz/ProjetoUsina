@@ -110,8 +110,8 @@ body {
 
 /* css background das paginas */
 .backgroundEventos {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     background-image: url('imagens/EventosUsina.jpg');
     background-size: contain;
