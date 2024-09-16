@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Loja</title>
-    <link href="../styles.css" rel="stylesheet">
+    <title>Nossa História</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +20,10 @@
 
 <body>
     <div class="menu">
+        <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
         <a href="../index.html">Início</a>
         <a href="eventos.html">Eventos</a>
+
         <a href="podcast.html">Podcasts</a>
         <a href="trabalhosAcademicos.html">Trabalhos Acadêmicos</a>
         <a href="newsletter.html">Notícias</a>
@@ -27,3 +32,19 @@
         <a href="login.html">
             <button><img src="../imagens/login_icon-removebg-preview.png" alt=""></button>
         </a>
+
+    </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
+</body>
+
+</html>

@@ -3,39 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="../styles.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
- <!-- antes de começar o código, eu nao sei o que estou fazendo mas esta funcionando -->
+
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
 </head>
 
 <body>
 
-     <div class="backgroundIndex">
-        
+    <div class="backgroundIndex">
+        <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
+
         <div class="menu">
             <a href="index.html">Início</a>
-            <a href="paginas/eventos.html">Eventos</a>
-            <a href="paginas/podcast.html">Podcasts</a>
-            <a href="paginas/trabalhosAcademicos.html">Trabalhos Acadêmicos</a>
-            <a href="paginas/newsletter.html">Notícias</a>
-            <a href="paginas/biografia.html">Sobre Nós</a>
-            <a href="paginas/doacoes.html">Seja um Doador</a>
-            <a href="paginas/login.html"> <button><img src="imagens\login_icon-removebg-preview.png"
-                        alt=""></button></a>
+            <a href="pages/eventos.html">Eventos</a>
+            <a href="pages/podcast.html">Podcasts</a>
+            <a href="pages/trabalhosAcademicos.html">Trabalhos Acadêmicos</a>
+            <a href="pages/newsletter.html">Notícias</a>
+            <a href="pages/biografia.html">Sobre Nós</a>
+            <a href="pages/doacoes.html">Seja um Doador</a>
+            <a href="pages/login.html">
+                <button>
+                    <img src="imagens\login_icon-removebg-preview.png" alt="">
+                </button>
+            </a>
+         
         </div>
 
 
         <div class="Logo">
-
-
             <img src="imagens\UsinaLogo.png" alt="Logo" width="10%" height="10%">
         </div>
         <div class="cabecalho"> 
@@ -47,15 +53,23 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est iusto illo voluptatum veritatis
                 facilis eligendi, quia ab repellendus ut alias officiis suscipit dolore, blanditiis aliquid, impedit
                 placeat adipisci laborum.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus et, iusto nobis consequatur sunt blanditiis at odio reprehenderit impedit quas vero placeat error repellat voluptatibus, qui vitae deleniti commodi aut!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur mollitia laudantium odio repellat eaque minima iure? Aliquam autem quam, magnam, praesentium alias dolores obcaecati ea dolorum deserunt distinctio consequatur sint!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem obcaecati non, necessitatibus neque debitis fugiat consequuntur dolorem culpa quidem, laborum est laudantium harum doloribus itaque. Optio accusamus iusto nesciunt eligendi?
             </p>
 
 
         </div>
     </div>
 
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
 </body>
 
 </html>

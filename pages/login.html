@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Loja</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+        <script src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
+
+    <div class="menu">
+        
+        <a href="../index.html">Início</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="podcast.html">Podcasts</a>
+        <a href="trabalhosAcademicos.html">Trabalhos Acadêmicos</a>
+        <a href="newsletter.html">Notícias</a>
+        <a href="biografia.html">Sobre Nós</a>
+        <a href="doacoes.html">Seja um Doador</a>
+        <a href="login.html">
+            <button>
+                <img src="../imagens\login_icon-removebg-preview.png" alt="">
+            </button>
+        </a>
+    </div>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="" id="loginForm">
+            <div class="input-group">
+                <label for="username">Nome de usuário:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha:</label>
+                <input type="text" id="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
+</body>
+
+</html>
