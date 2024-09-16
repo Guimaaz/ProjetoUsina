@@ -47,7 +47,7 @@
     height: auto;
     width: auto;
     overflow: hidden;
-    background-image: url('imagens/EventosUsina.jpg');
+    background-image: url('../imagens/EventosUsina.jpg');
     background-size: contain;
     background-position: auto;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url('imagens/UsinaImagem.jpg');
+    background-image: url('../imagens/UsinaImagem.jpg');
     background-size: contain;
     background-position: auto;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
     height: 100%;
     width: 100%;
     overflow: hidden;
-    background-image: url('imagens/SobreNosUsina.jpeg');
+    background-image: url('../imagens/SobreNosUsina.jpeg');
     background-size: cover;
     background-position: auto;
     background-repeat: no-repeat;
