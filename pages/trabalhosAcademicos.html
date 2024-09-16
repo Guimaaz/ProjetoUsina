@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Trabalhos trabalhosAcademicos</title>
-    <link href="../css/menu.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../scripts/script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +20,7 @@
 
 <body>
     <div class="menu">
+        <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
         <a href="../index.html">Início</a>
         <a href="eventos.html">Eventos</a>
 
@@ -32,6 +35,17 @@
 
 
     </div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
 </body>
 
 </html>

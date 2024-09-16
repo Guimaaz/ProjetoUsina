@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Loja</title>
 
-    <link href="../css/menu.css" rel="stylesheet">
-    <link href="../css/styles.css" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../scripts/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,12 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+        <script src="../scripts/script.js"></script>
 </head>
 
 <body>
     <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
 
     <div class="menu">
+        <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
         <a href="index.html">Início</a>
         <a href="eventos.html">Eventos</a>
         <a href="podcast.html">Podcasts</a>
@@ -52,7 +55,18 @@
         </form>
     </div>
 
-    <script src="../scripts/script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons()
+    </script>
 </body>
 
 </html>
