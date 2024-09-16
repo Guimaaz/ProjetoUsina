@@ -125,13 +125,16 @@ body {
 .backgroundIndex {
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-image: url('imagens/UsinaImagem.jpg');
     background-size: contain;
     background-position: auto;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
+ 
+   
+    
 
 
 }
@@ -192,7 +195,18 @@ body {
 
 /* css de textos */
 .cabecalhoTextos {
-    padding-top: 750px
+    padding-top: 40%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    
+}
+
+.cabecalho {
+    position: relative;
+    display: block;
+    z-index: 1;
+    
 }
 
 /* responsividade das letras */
