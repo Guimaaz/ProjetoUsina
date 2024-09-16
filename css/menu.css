@@ -4,10 +4,16 @@
   background-color: rgb(56, 53, 53);
   padding: 20px;
   position: relative;
-  top: -56px;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 2;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 900px;
+  gap: 40px;
+  padding-left: 30px;
+  border-radius: 20px;
 }
 
 .menu a {
