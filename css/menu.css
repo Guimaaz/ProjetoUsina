@@ -1,19 +1,19 @@
 .menu {
   display: none;
   flex-direction: column;
-  background-color: rgb(56, 53, 53);
-  padding: 20px;
+  padding: 0px;
   position: relative;
   top: 0px;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   align-items: center;
   margin: 20px auto;
   max-width: 900px;
   gap: 40px;
   padding-left: 30px;
   border-radius: 20px;
+  
 }
 
 .menu a {
@@ -25,6 +25,7 @@
   text-align: center;
   display: block;
   background-color: transparent;
+  
 }
 
 .menu button {
@@ -45,7 +46,7 @@
   cursor: pointer;
   display: block;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   margin-left: 1.5rem;
   margin-top: 1.5rem;
   width: 32px;
@@ -54,16 +55,20 @@
 
 @media only screen and (min-width: 780px) {
   .menu {
+    background-color: rgba(0, 0, 0, 0.644);
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
     align-items: center;
     margin: 20px auto;
-    max-width: 900px;
+    max-width: 800px;
     gap: 40px;
     border-radius: 20px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    padding-right: 30px;
     position: relative;
+    z-index: 1;
+
   }
 
   .menu a {
