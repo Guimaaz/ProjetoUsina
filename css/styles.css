@@ -184,10 +184,18 @@ h1 {
     }
 }
 
+@media only screen and (max-width: 920px) {
+    p {
+
+        padding-top: 25vh;
+
+    }
+}
+
 @media only screen and (max-width: 900px) {
     p {
 
-        padding-top: 20vh;
+        padding-top: 25vh;
 
     }
 }
@@ -229,7 +237,7 @@ h1 {
 
 @media only screen and (max-width: 560px) {
     p {
-        padding-top: 20vh;
+        padding-top: 10vh;
     }
 }
 
@@ -243,7 +251,7 @@ h1 {
 
 @media only screen and (max-width: 400px) {
     p {
-        padding-top: 1vh;
+        padding-top: 10vh;
     }
 }
 
