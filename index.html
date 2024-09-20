@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -23,7 +24,7 @@
 
     <div class="backgroundIndex">
         <i data-lucide="menu" class="menu-toggle" onclick="toggleMenu()"></i>
-
+        <div class="background2index"></div>
         <div class="menu">
             <a href="index.html">Início</a>
             <a href="pages/eventos.html">Eventos</a>
@@ -34,30 +35,33 @@
             <a href="pages/doacoes.html">Seja um Doador</a>
             <a href="pages/login.html">
                 <button>
-                    <img src="imagens\login_icon-removebg-preview.png" alt="login">
+                    <img src="imagens/login_icon-removebg-preview.png" alt="login">
                 </button>
             </a>
-         
+
         </div>
 
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                
+                <div class= "Logo">
+                    <img src="imagens/UsinaLogo.png" alt="Logo" class="img-fluid" style="width: 15%; height: 15%;">
+                </div>
 
-        <div class="Logo">
-            <img src="imagens\UsinaLogo.png" alt="Logo" width="10%" height="10%">
-        </div>
-        <div class="cabecalho"> 
-            <h1>Usina Eco Cultural</h1>
-            <div class="cabecalhoTextos"></div> 
-            <p>Teste de texto <br>
-                aqui iremos escrever a respeito da historia e vinciular uma ancora para a pagina de historia, o mesmo
-                sera feito com a loja <br>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est iusto illo voluptatum veritatis
-                facilis eligendi, quia ab repellendus ut alias officiis suscipit dolore, blanditiis aliquid, impedit
-                placeat adipisci laborum.   
-            </p>
-           
-            
+               
+                <div class="cabecalho">
+                    <h1 class="text-center">Usina Eco Cultural</h1>
 
-
+                    <p class="mt-4">
+                        Teste de texto <br>
+                        aqui iremos escrever a respeito da história e vincular uma âncora para a página de história,
+                        o mesmo será feito com a loja. <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur est iusto illo voluptatum
+                        veritatis facilis eligendi, quia ab repellendus ut alias officiis suscipit dolore, blanditiis
+                        aliquid, impedit placeat adipisci laborum.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -71,6 +75,10 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         lucide.createIcons()
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
     </script>
 </body>
 
