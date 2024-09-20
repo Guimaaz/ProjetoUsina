@@ -1,13 +1,17 @@
 const bcrypt = require('bcryptjs');
-const db = require('../../db');
+const { userDb } = require('../../../db');
 
 async function signUp(app) {
-  app.post('/signup', async (req, res) => {
+  app.post('/auth/signup', async (req, res) => {
     try {
       const { username, password } = req.body;
+
+      if (!username || !password) {
+        return res.status(400).send({ message: "Invalid username or password" })
+      }
       
       // Verifica se o usuário já existe
-      db.get("SELECT * FROM users WHERE username = ?", [username], (err, user) => {
+      userDb.get("SELECT * FROM users WHERE username = ?", [username], (err, user) => {
         if (err) {
           return res.status(500).send({ message: "Internal server error" });
         }
@@ -20,7 +24,7 @@ async function signUp(app) {
         const hashedPassword = bcrypt.hashSync(password, 8);
         
         // Insere o novo usuário no banco de dados
-        db.run("INSERT INTO users (username, password) VALUES (?, ?)", [username, hashedPassword], (err) => {
+        userDb.run("INSERT INTO users (username, password) VALUES (?, ?)", [username, hashedPassword], (err) => {
           if (err) {
             return res.status(500).send({ message: "Error creating user" });
           }
@@ -28,7 +32,7 @@ async function signUp(app) {
         });
       });
     } catch (err) {
-      throw new Error('deu pau no criar conta', err)
+      throw new Error('Error creating user', err)
     }
   });
 }

@@ -1,8 +1,8 @@
 const fastify = require('fastify')
 const cors = require('@fastify/cors')
 
-const signUp = require('./routes/sign-up')
-const login = require('./routes/login')
+const signUp = require('./routes/user/sign-up')
+const login = require('./routes/user/login')
 
 const app = fastify()
 

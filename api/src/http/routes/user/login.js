@@ -1,15 +1,15 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const db = require('../../db');
+const { userDb } = require('../../../db');
 
 async function login(app) {
-  app.post('/login', async (req, res) => {
+  app.post('/auth/login', async (req, res) => {
     const { username, password } = req.body;
     
     try {
-      // Convertendo db.get para Promise para trabalhar melhor com async/await
+      // Convertendo userDb.get para Promise para trabalhar melhor com async/await
       const user = await new Promise((resolve, reject) => {
-        db.get("SELECT * FROM users WHERE username = ?", [username], (err, row) => {
+        userDb.get("SELECT * FROM users WHERE username = ?", [username], (err, row) => {
           if (err) reject(err); // Erro ao acessar o banco
           resolve(row); // Retorna o usuário encontrado
         });
