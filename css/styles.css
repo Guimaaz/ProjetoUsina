@@ -86,9 +86,9 @@
 
 .backgroundHistoria{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
-    background-image: url('.. /imagens/UsinaHistoria.jpeg');
+    background-image: url('../imagens/HistoriaUsina.jpeg');
     background-size: contain;
     background-position: auto;
     background-repeat: no-repeat;
@@ -143,9 +143,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(95, 143, 97, 0.7));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(95, 143, 97, 0.5));
     z-index: 1;
     pointer-events: none;
+}
+article {
+    position: relative; /* Necessário para z-index funcionar */
+    z-index: 2; /* Deve ser maior que 1 */
+    color: white; /* Certifique-se de que o texto seja visível */
+    padding: 20px; /* Adicione padding para o texto não colar nas bordas */
 }
 
 .cabecalhoTextos {
