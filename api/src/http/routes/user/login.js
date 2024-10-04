@@ -1,25 +1,20 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const { userDb } = require('../../../db');
+const validateIfUserExists = require('../../../utils/auth/validate-if-user-exists');
+const env = require('../../../env')
 
 async function login(app) {
   app.post('/auth/login', async (req, res) => {
     const { username, password } = req.body;
     
     try {
-      // Convertendo userDb.get para Promise para trabalhar melhor com async/await
-      const user = await new Promise((resolve, reject) => {
-        userDb.get("SELECT * FROM users WHERE username = ?", [username], (err, row) => {
-          if (err) reject(err); // Erro ao acessar o banco
-          resolve(row); // Retorna o usuário encontrado
-        });
-      });
-
-      // Verifica se o usuário existe
+      // // Verifica se o usuário existe
+      const user = validateIfUserExists(userDb, username, { asPromise: true });
+      
       if (!user) {
         return res.status(400).send({ message: "User not found" });
       }
-
       // Verifica se a senha está correta
       const passwordIsValid = bcrypt.compareSync(password, user.password);
       if (!passwordIsValid) {
@@ -27,7 +22,7 @@ async function login(app) {
       }
 
       // Gera um token JWT
-      const token = jwt.sign({ id: user.id }, 'shouldnotpass123', {
+      const token = jwt.sign({ id: user.id }, env.JWT_SECRET, {
         expiresIn: 86400, // Token expira em 24 horas
       });
 
