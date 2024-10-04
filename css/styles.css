@@ -89,13 +89,28 @@
     height: 100vh;
     overflow: hidden;
     background-image: url('../imagens/HistoriaUsina.jpeg');
-    background-size: contain;
-    background-position: auto;
+    background-position: cover  ;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: relative;
     z-index: 0;
 
 }
+.titulo {
+    position: absolute; 
+    font-size: 70px;
+    font-style: italic;
+    top: 20px; 
+    left: 20px; 
+    color: rgb(255, 255, 255); 
+    z-index: 1; 
+}
+.texto{
+    
+    font-size: 100%;
+    ;
+}
+
 
 
 
